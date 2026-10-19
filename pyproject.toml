@@ -1,0 +1,8 @@
+[project]
+name = "deskflow-esp32-unlock-android"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pyautogui>=0.9.54",
+    "pydirectinput>=1.0.4",
+]
