@@ -1,11 +1,7 @@
 
 import time
-import os
 import pyautogui
 import pydirectinput
-
-# 从环境变量读取密码，避免直接写入源代码
-# ANDROID_PIN = os.environ["ANDROID_PIN"]
 
 class DeskflowScreenSwitcher:
     def __init__(self):
@@ -82,6 +78,7 @@ if __name__ == "__main__":
     # dss.switch_to("down")
     dss.switch_to("left")
     try:
+        import os
         unlock_pin = os.environ["ANDROID_PIN"]
         dss.terminal_unlock(unlock_pin)
     except KeyError:
